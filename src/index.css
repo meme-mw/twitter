@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*,html,body,#root{
+  padding: 0;
+  box-sizing: border-box;
+  margin:0;
+  color:#0F1419;
+  
+ 
+}
+#root{
+  width:100vw;
+  max-width:100%; 
+  min-height:100vh;
+  max-height: 100%;
+}
+li,li a{
+  display:flex;
+  color:#0F1419;
+  font-size:20px;
+}
+li a{
+  width:100%;
+  padding:inherit;
+}
+.main,.tweet{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+/* CSS */
+.button-18 {
+  align-items: center;
+  background-color: #1A8CD8;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button-18:hover,
+.button-18:focus { 
+  background-color: #0a80ce;
+  color: #ffffff;
+}
+
+.button-18:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.button-18:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+li h2{
+  font-size: 15px;
+  font-weight: bold;
+}
+.avatar .prof{
+  position:relative;
+  top:3rem;
+  border:#fff solid 5px;
+}
+.profile{
+  background-image: url("https://pbs.twimg.com/profile_banners/1720764181190742016/1726885012/1500x500");
+  background-position: center;
+  background-size: contain;
+}
+@media (max-width: 700px) {
+  li .text-left,.trends{
+    display:none;
+  }
+  nav{
+    padding-left:0 !important;
+   height:auto !important;
+  }
+  nav ul{
+    position: fixed;
+    display: flex;
+   
+   width:100%;
+   height:auto !important;
+   left:0;
+   bottom:0;
+  }
+  nav ul li{
+    width:17.17%;
+    padding:1px !important;
+  }
+  nav ul li div,nav ul li a{
+    margin:auto;
+  }
+  .main{
+    width:100%;
+    padding-top:3rem;
+  }
+  nav{
+    position: absolute;
+    width:100% !important;
+
+  }
+  nav div{
+    width:100% !important;
+  }
+}
